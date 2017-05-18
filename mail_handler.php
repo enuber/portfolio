@@ -34,9 +34,10 @@ $mail->addReplyTo($_POST['email']);
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = $_POST['subject'];
-$mail->Body    = $_POST['name'].' '.$_POST['lastName'].' '.$_POST['email'].' '.$_POST['phone'].' '.$_POST['body'];
+$mail->Subject = 'Contact From Your Portfolio';
+$mail->Body    = $_POST['name'].' '.$_POST['surname'].' '.$_POST['email'].' '.$_POST['phone'].' '.$_POST['message'];
 $mail->AltBody = htmlentities($_POST['body']);
+
 
 if(!$mail->send()) {
     echo 'Message could not be sent.';

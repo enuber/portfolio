@@ -70,6 +70,7 @@ if ($httpRequest->isAjax()) {
     $httpResponse->setCode(200);
     $response = new \Nette\Application\Responses\JsonResponse($responseArray);
     $response->send($httpRequest, $httpResponse);
+
 }
 
 

@@ -443,36 +443,6 @@ function waypointsRefresh() {
 /* ajax contact form */
 
 
-// function sendMail(){
-//     var data = {
-//         name: $('input[name="name"]').val(),
-//         lastName: $('input[name="surname"]').val(),
-//         email: $('input[name="email"]').val(),
-//         phone: $('input[name="phone"]').val(),
-//         body: $('textarea').val()
-//     };
-//     $('<div>').css({
-//         'height': $('body').height(),
-//         'width': $('body').width(),
-//         'background-color': 'blue',
-//         'font-size': '50px',
-//         'position': 'absolute',
-//         'top': 0,
-//         'left': 0
-//     }).text('MESSAGE IS SENDING').attr('id', 'send').appendTo($('.messages'));
-//     $.ajax({
-//         url: 'mail_handler.php',
-//         method: 'POST',
-//         data: data,
-//         success: function(results){
-//             console.log(results);
-//         },
-//         error: function(response) {
-//             console.log(response, "call failed");
-//         }
-//     });
-// }
-
 function contactForm() {
     $("#contact-form").submit(function () {
 
@@ -480,27 +450,32 @@ function contactForm() {
 
 		var data = {
         name: $('input[name="name"]').val(),
-        lastName: $('input[name="surname"]').val(),
+        surname: $('input[name="surname"]').val(),
         email: $('input[name="email"]').val(),
         phone: $('input[name="phone"]').val(),
-        body: $('textarea').val()
+        message: $('textarea').val()
     };
 
 
 	$.ajax({
 	    type: "POST",
 	    url: url,
-	    data: data, // serializes the form's elements.
+	    data: $(this).serialize(), // serializes the form's elements.
 	    success: function (data) {
-		var messageAlert = 'alert-' + data.type;
-		var messageText = data.message;
+		var messageAlert = 'alert-success';
+		var messageText = 'Success, information was sent';
 		var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable animated bounceIn"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
 		if (messageAlert && messageText) {
 		    $('#contact-form').find('.messages').html(alertBox);
 		}
 	    },
 		error: function(response){
-	    	console.log(response, "failed")
+            var messageAlert = 'alert-danger';
+            var messageText = 'Failure, information was not sent';
+            var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable animated bounceIn"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+            if (messageAlert && messageText) {
+                $('#contact-form').find('.messages').html(alertBox);
+            }
 		}
 	});
 	return false; // avoid to execute the actual submit of the form.
