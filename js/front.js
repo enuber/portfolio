@@ -442,24 +442,41 @@ function waypointsRefresh() {
 
 /* ajax contact form */
 
+
 function contactForm() {
     $("#contact-form").submit(function () {
 
-	var url = "contact.php"; // the script where you handle the form input.
+	var url = "../mail_handler.php"; // the script where you handle the form input.
+
+		var data = {
+        name: $('input[name="name"]').val(),
+        surname: $('input[name="surname"]').val(),
+        email: $('input[name="email"]').val(),
+        phone: $('input[name="phone"]').val(),
+        message: $('textarea').val()
+    };
+
 
 	$.ajax({
 	    type: "POST",
 	    url: url,
 	    data: $(this).serialize(), // serializes the form's elements.
-	    success: function (data)
-	    {
-		var messageAlert = 'alert-' + data.type;
-		var messageText = data.message;
+	    success: function (data) {
+		var messageAlert = 'alert-success';
+		var messageText = 'Success, information was sent';
 		var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable animated bounceIn"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
 		if (messageAlert && messageText) {
 		    $('#contact-form').find('.messages').html(alertBox);
 		}
-	    }
+	    },
+		error: function(response){
+            var messageAlert = 'alert-danger';
+            var messageText = 'Failure, information was not sent';
+            var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable animated bounceIn"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+            if (messageAlert && messageText) {
+                $('#contact-form').find('.messages').html(alertBox);
+            }
+		}
 	});
 	return false; // avoid to execute the actual submit of the form.
     });
@@ -497,3 +514,5 @@ $(document).ready(function() {
     email += 'yahoo.com';
     $("#forEmail").attr('href', email);
 });
+
+
