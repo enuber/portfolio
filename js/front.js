@@ -442,7 +442,6 @@ function waypointsRefresh() {
 
 /* ajax contact form */
 
-
 function contactForm() {
     $("#contact-form").submit(function () {
 
@@ -462,12 +461,13 @@ function contactForm() {
 	    url: url,
 	    data: $(this).serialize(), // serializes the form's elements.
 	    success: function (data) {
-		var messageAlert = 'alert-success';
-		var messageText = 'Success, information was sent';
-		var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable animated bounceIn"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-		if (messageAlert && messageText) {
-		    $('#contact-form').find('.messages').html(alertBox);
-		}
+	    	$('.formSubmit').closest('form').find('input[type=text], textarea').val('');
+	    	var messageAlert = 'alert-success';
+			var messageText = 'Success, information was sent';
+			var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable animated bounceIn"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+			if (messageAlert && messageText) {
+				$('#contact-form').find('.messages').html(alertBox);
+			}
 	    },
 		error: function(response){
             var messageAlert = 'alert-danger';
@@ -482,6 +482,8 @@ function contactForm() {
     });
 }
 
+
+// additional functionality
 
 $(document).on('click','.navbar-collapse.in',function(e) {
 	console.log(e);
@@ -515,4 +517,7 @@ $(document).ready(function() {
     $("#forEmail").attr('href', email);
 });
 
+// $('.formSubmit').click(function() {
+// 	$(this).closest('form').find('input[type=text]').val('');
+// });
 
