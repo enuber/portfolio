@@ -22,27 +22,14 @@ $options = array(
 );
 
 $mail->smtpConnect($options);
-$mail->From = $_POST['email'];//your email sending account
-$mail->FromName = $_POST['name'];//your email sending account name
+$mail->From = $_POST['email'];
+$mail->FromName = $_POST['name'];
 $mail->addAddress('erik.nuber@yahoo.com');     // Add a recipient
-//$mail->addAddress('ellen@example.com');               // Name is optional
 $mail->addReplyTo($_POST['email']);
-//$mail->addCC('cc@example.com');
-//$mail->addBCC('bcc@example.com');
-
-//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-$mail->isHTML(true);                                  // Set email format to HTML
+$mail->isHTML(true);                           // Set email format to HTML
 
 $mail->Subject = 'Contact From Your Portfolio';
 $mail->Body    = $_POST['name'].' '.$_POST['surname'].' '.$_POST['email'].' '.$_POST['phone'].' '.$_POST['message'];
 $mail->AltBody = htmlentities($_POST['body']);
 
-
-if(!$mail->send()) {
-    echo 'Message could not be sent.';
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
-} else {
-    echo 'Message has been sent';
-}
 ?>
