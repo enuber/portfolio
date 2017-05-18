@@ -1817,7 +1817,6 @@ a.list-group-item.active > .badge,
   position: relative;
   bottom: 275px;
   z-index: 10;
-
 }
 .githubResume div {
   margin-bottom: 15px;
@@ -1853,7 +1852,7 @@ a:hover {
 
 @media screen and (max-width: 650px) {
   .githubResume {
-    bottom: 180px;
+    bottom: 175px;
   }
 
   .appleImgGroup {
