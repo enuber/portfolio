@@ -23,17 +23,17 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="853" column="45" lean-forward="false" selection-start-line="853" selection-start-column="45" selection-end-line="853" selection-end-column="45" />
+            <state relative-caret-position="322">
+              <caret line="39" column="47" lean-forward="false" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="front.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="front.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/front.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="554">
@@ -41,6 +41,16 @@
               <folding>
                 <marker date="1495065888000" expanded="true" signature="10729:10736" ph="×" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contact.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,6 +87,7 @@
       <find>made m</find>
       <find>school</find>
       <find>calc</find>
+      <find>it-wor</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -90,8 +101,9 @@
         <option value="$PROJECT_DIR$/css/style.default.css" />
         <option value="$PROJECT_DIR$/../lfz/simon-electronic-game/index.html" />
         <option value="$PROJECT_DIR$/../lfz/memory_match/index.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/front.js" />
+        <option value="$PROJECT_DIR$/contact.php" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -244,12 +256,12 @@
       <option name="presentableId" value="Default" />
       <updated>1494865120408</updated>
       <workItem from="1494865123611" duration="13507000" />
-      <workItem from="1494945622226" duration="35399000" />
+      <workItem from="1494945622226" duration="36424000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48906000" />
+    <option name="totallyTimeSpent" value="49931000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-185" y="-1017" width="1843" height="963" extended-state="0" />
@@ -581,22 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="853" column="45" lean-forward="false" selection-start-line="853" selection-start-column="45" selection-end-line="853" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/front.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="554">
@@ -604,6 +600,27 @@
           <folding>
             <marker date="1495065888000" expanded="true" signature="10729:10736" ph="×" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/favicon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="39" column="47" lean-forward="false" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>

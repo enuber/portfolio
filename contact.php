@@ -3,13 +3,13 @@
 /**
  * configure here
  */
-$from = 'IT WORKER <it@domain.com>';
-$sendTo = 'IT WORKER <it@domain.com>';
+$from = 'automailer@eriknuber.us';
+$sendTo = 'erik.nuber@yahoo.com';
 $subject = 'New message from contact form';
 $fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message');
 $htmlHeader = '';
 $htmlFooter = '';
-$okMessage = 'Contact form succesfully submitted. Thank you, I will get back to you soon!';
+$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
 
 $htmlContent = '<h1>New message from contact form</h1>';
 
