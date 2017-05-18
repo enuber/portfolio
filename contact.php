@@ -3,7 +3,7 @@
 /**
  * configure here
  */
-$from = 'erik.nuber@yahoo.com';
+$from = 'anything@mail.com';
 $sendTo = 'erik.nuber@yahoo.com';
 $subject = 'New message from contact form';
 $fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message');
