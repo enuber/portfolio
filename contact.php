@@ -3,7 +3,7 @@
 /**
  * configure here
  */
-$from = 'automailer@eriknuber.us';
+$from = $_POST['email'];
 $sendTo = 'erik.nuber@yahoo.com';
 $subject = 'New message from contact form';
 $fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message');
@@ -70,6 +70,7 @@ if ($httpRequest->isAjax()) {
     $httpResponse->setCode(200);
     $response = new \Nette\Application\Responses\JsonResponse($responseArray);
     $response->send($httpRequest, $httpResponse);
+
 }
 
 
