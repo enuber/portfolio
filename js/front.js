@@ -489,3 +489,11 @@ var footerDate = (function() {
     el.innerHTML = year
 
 }());
+
+$(document).ready(function() {
+    var email = 'mailto:';
+    email += 'erik.';
+    email += 'nuber@';
+    email += 'yahoo.com';
+    $("#forEmail").attr('href', email);
+});
