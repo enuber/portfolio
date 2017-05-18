@@ -1,1 +1,68 @@
-/* your styles go here */
+
+.appleImgGroup {
+    position: relative;
+}
+.appleImg {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    opacity: 0.2;
+}
+.githubResume {
+    position: relative;
+    bottom: 275px;
+    z-index: 10;
+}
+.githubResume div {
+    margin-bottom: 15px;
+}
+.githubResume button:first-of-type {
+    margin-bottom: 15px;
+}
+.githubButton {
+    background-color: transparent;
+    box-shadow: 2px 2px 8px #808080;
+}
+a:hover, .githubButton:hover {
+    text-decoration: none;
+}
+.githubButton:hover {
+    background-color: #4fbfa8;
+}
+a:hover {
+    color: white;
+}
+
+.skills img {
+    max-height: 80px;
+    margin: 0 15px 15px;
+}
+.skills {
+    margin-bottom:;
+}
+
+.iconRow div {
+    text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+    .githubResume {
+        bottom: 175px;
+    }
+
+    .appleImgGroup {
+        margin-bottom: -250px;
+    }
+    .skills img {
+        max-height: 50px;
+        margin: 0 8px 8px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .appleImgGroup {
+        margin-bottom: -175px;
+    }
+
+}
+
