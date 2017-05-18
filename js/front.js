@@ -517,7 +517,3 @@ $(document).ready(function() {
     $("#forEmail").attr('href', email);
 });
 
-// $('.formSubmit').click(function() {
-// 	$(this).closest('form').find('input[type=text]').val('');
-// });
-
