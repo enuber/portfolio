@@ -446,16 +446,6 @@ function contactForm() {
     $("#contact-form").submit(function () {
 
 	var url = "../mail_handler.php"; // the script where you handle the form input.
-     //    var url = "http://eriknuber.us/mail_handler.php"; // the script where you handle the form input.
-
-		var data = {
-        name: $('input[name="name"]').val(),
-        surname: $('input[name="surname"]').val(),
-        email: $('input[name="email"]').val(),
-        phone: $('input[name="phone"]').val(),
-        message: $('textarea').val()
-    };
-
 
 	$.ajax({
 	    type: "POST",
