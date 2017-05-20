@@ -460,7 +460,7 @@ function contactForm() {
 				$('#contact-form').find('.messages').html(alertBox);
 			}
 	    },
-		error: function(response){
+		error: function(){
             var messageAlert = 'alert-danger';
             var messageText = 'Failure, information was not sent';
             var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable animated bounceIn"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
@@ -508,3 +508,17 @@ $(document).ready(function() {
     $("#forEmail").attr('href', email);
 });
 
+$('input[name="email"]').blur(function(){
+    email= $('input[name="email"]').val();
+    var atpos = email.indexOf("@");
+    var dotpos = email.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length) {
+        $('input[name=email]').css('border-color', '#e41919');
+    }
+    var messageAlert = 'alert-danger';
+    var messageText = 'Please enter a valid email address is not vailid.';
+    var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable animated bounceIn"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+    if (messageAlert && messageText) {
+        $('#contact-form').find('.messages').html(alertBox);
+    }
+});

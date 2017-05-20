@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4a18c07d-d685-41b7-8068-b08edd193f7d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.default.css" afterPath="$PROJECT_DIR$/css/style.default.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/front.js" afterPath="$PROJECT_DIR$/js/front.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,8 +30,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="298" column="69" lean-forward="false" selection-start-line="298" selection-start-column="69" selection-end-line="298" selection-end-column="69" />
+            <state relative-caret-position="308">
+              <caret line="161" column="69" lean-forward="false" selection-start-line="161" selection-start-column="69" selection-end-line="161" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -41,8 +41,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>toggle</find>
-      <find>tooltip</find>
       <find>dropdown-toggle</find>
       <find>data-t</find>
       <find>es6</find>
@@ -71,6 +69,8 @@
       <find>school</find>
       <find>bootstrap</find>
       <find>buttons</find>
+      <find>resume</find>
+      <find>webdesign</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -96,9 +96,9 @@
         <option value="$PROJECT_DIR$/css/custom.css" />
         <option value="$PROJECT_DIR$/emailconfig.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/js/front.js" />
         <option value="$PROJECT_DIR$/mail_handler.php" />
         <option value="$PROJECT_DIR$/css/style.default.css" />
+        <option value="$PROJECT_DIR$/js/front.js" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -121,8 +121,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-213" />
-    <option name="y" value="-1057" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="826" />
   </component>
@@ -257,18 +256,18 @@
       <workItem from="1494945622226" duration="56250000" />
       <workItem from="1495147904308" duration="560000" />
       <workItem from="1495150675887" duration="2918000" />
-      <workItem from="1495208513092" duration="1051000" />
+      <workItem from="1495208513092" duration="4158000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80085000" />
+    <option name="totallyTimeSpent" value="83192000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-213" y="-1057" width="1440" height="826" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1440" height="826" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22174536" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22174536" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -306,37 +305,9 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../lfz/prototypes_C2.17/php_mailer/emailconfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lfz/prototypes_C2.17/php_mailer/email_config.default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lfz/prototypes_C2.17/php_mailer/mail_handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/email_config.default.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lfz/prototypes_C2.17/php_mailer/mail_sender.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-143">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -597,24 +568,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mail_handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/front.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1495145196000" expanded="true" signature="10835:10842" ph="×" />
-            <marker date="1495145196000" expanded="true" signature="11310:11317" ph="×" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -643,13 +597,68 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
           <caret line="469" column="16" lean-forward="false" selection-start-line="469" selection-start-column="16" selection-end-line="469" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.parallax-1.1.3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.cookie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-524">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mail_handler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-113">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lfz/prototypes_C2.17/php_mailer/mail_handler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/front.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <marker date="1495230058000" expanded="true" signature="10835:10842" ph="×" />
+            <marker date="1495230058000" expanded="true" signature="11302:11309" ph="×" />
+            <marker date="1495230058000" expanded="true" signature="12990:12997" ph="×" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lfz/prototypes_C2.17/php_mailer/mail_sender.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="21" column="53" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="298" column="69" lean-forward="false" selection-start-line="298" selection-start-column="69" selection-end-line="298" selection-end-column="69" />
+        <state relative-caret-position="308">
+          <caret line="161" column="69" lean-forward="false" selection-start-line="161" selection-start-column="69" selection-end-line="161" selection-end-column="69" />
           <folding />
         </state>
       </provider>
