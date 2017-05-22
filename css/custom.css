@@ -44,7 +44,10 @@ a:hover {
 .iconRow div {
     text-align: center;
 }
-
+.emailCheck, .phoneCheck {
+    color: #e41919;
+    font: 8px;
+}
 @media screen and (max-width: 650px) {
     .githubResume {
         bottom: 175px;

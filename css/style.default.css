@@ -82,7 +82,7 @@ UNIVERSAL SECTION STYLES
   font-size: 50px;
   font-weight: 100;
   padding: 10px 0;
-  margin-bottom: 44px;
+  margin-bottom: 34px;
   text-align: center;
   border-bottom: solid 1px #ccc;
   border-top: solid 1px #ccc;
@@ -642,7 +642,7 @@ CONTACT
   background: #fff;
 }
 .contact form {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .contact form input,
 .contact form textarea {
