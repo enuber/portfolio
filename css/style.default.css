@@ -181,7 +181,7 @@ INTRO
   -webkit-backface-visibility: hidden;
 }
 #intro .item .logo {
-  margin-bottom: 120px;
+  margin-top: 135px;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-backface-visibility: hidden;
