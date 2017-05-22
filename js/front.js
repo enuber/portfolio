@@ -509,16 +509,35 @@ $(document).ready(function() {
 });
 
 $('input[name="email"]').blur(function(){
-    email= $('input[name="email"]').val();
+	var isAlert = null;
+    var email= $('input[name="email"]').val();
     var atpos = email.indexOf("@");
     var dotpos = email.lastIndexOf(".");
     if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length) {
+        isAlert=true;
+    } else {
+        isAlert = false
+	}
+    var messageText = 'Please enter a valid email address.';
+    if (isAlert) {
         $('input[name=email]').css('border-color', '#e41919');
-    }
-    var messageAlert = 'alert-danger';
-    var messageText = 'Please enter a valid email address is not vailid.';
-    var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable animated bounceIn"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-    if (messageAlert && messageText) {
-        $('#contact-form').find('.messages').html(alertBox);
-    }
+        $('.emailCheck').html(messageText);
+    } else {
+        $('input[name=email]').css('border-color', 'none');
+        $('.emailCheck').html('');
+	}
+});
+
+$('input[name="phone"]').blur(function(){
+	var phone = $('input[name="phone"]').val();
+	var phoneExp = new RegExp(/^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$/);
+	var result = phoneExp.test(phone);
+    var messageText = 'Please enter a valid phone number.';
+    if (!result) {
+        $('.phoneCheck').html(messageText);
+        $('input[name=phone]').css('border-color', '#e41919');
+	} else {
+        $('.phoneCheck').html('');
+        $('input[name=phone]').css('border-color', 'none');
+	}
 });
