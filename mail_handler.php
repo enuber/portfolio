@@ -2,7 +2,7 @@
 require_once('emailconfig.php');
 require('phpmailer/PHPMailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
-$mail->SMTPDebug = 0;                               // Enable verbose debug output
+$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';     // Specify main and backup SMTP servers
@@ -31,5 +31,11 @@ $mail->isHTML(true);                           // Set email format to HTML
 $mail->Subject = 'Contact From Your Portfolio';
 $mail->Body    = $_POST['name'].' '.$_POST['surname'].' '.$_POST['email'].' '.$_POST['phone'].' '.$_POST['message'];
 $mail->AltBody = htmlentities($_POST['body']);
+
+if(!$mail->Send()){
+    echo "Mailer Error: " . $mail->ErrorInfo;
+} else {
+    echo "Message has been sent";
+}
 
 ?>
