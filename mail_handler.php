@@ -30,7 +30,7 @@ $mail->isHTML(true);                           // Set email format to HTML
 
 $mail->Subject = 'Contact From Your Portfolio';
 $mail->Body    = $_POST['name'].' '.$_POST['surname'].' '.$_POST['email'].' '.$_POST['phone'].' '.$_POST['message'];
-$mail->AltBody = htmlentities($_POST['body']);
+$mail->AltBody = htmlentities($_POST['message']);
 
 if(!$mail->Send()){
     echo "Mailer Error: " . $mail->ErrorInfo;
