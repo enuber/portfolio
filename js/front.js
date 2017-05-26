@@ -529,7 +529,7 @@ $('input[name="surname"]').blur(function() {
         $('.lastNameCheck').html(messageText);
         $('input[name=surname]').css('border-color', '#e41919');
     } else {
-        $('.nameCheck').html('');
+        $('.lastNameCheck').html('');
         $('input[name=surname]').css('border-color', 'none');
     }
 });
