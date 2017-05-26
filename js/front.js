@@ -508,6 +508,32 @@ $(document).ready(function() {
     $("#forEmail").attr('href', email);
 });
 
+/*** validation ***/
+
+$('input[name="name"]').blur(function() {
+    var firstName = $('input[name="name"]').val();
+    var messageText = 'Please enter your name.';
+    if (firstName.length < 2 || !(/\S/.test(firstName)) || !(/^[a-z ,.'-]+$/i.test(firstName)) ) {
+        $('.nameCheck').html(messageText);
+        $('input[name=name]').css('border-color', '#e41919');
+    } else {
+        $('.nameCheck').html('');
+        $('input[name=name]').css('border-color', 'none');
+    }
+});
+
+$('input[name="surname"]').blur(function() {
+    var lastName = $('input[name="surname"]').val();
+    var messageText = 'Please enter your last name.';
+    if (lastName.length < 2 || !(/\S/.test(lastName)) || !(/^[a-z ,.'-]+$/i.test(lastName)) ) {
+        $('.lastNameCheck').html(messageText);
+        $('input[name=surname]').css('border-color', '#e41919');
+    } else {
+        $('.nameCheck').html('');
+        $('input[name=surname]').css('border-color', 'none');
+    }
+});
+
 $('input[name="email"]').blur(function(){
 	var isAlert = null;
     var email= $('input[name="email"]').val();
@@ -533,7 +559,7 @@ $('input[name="phone"]').blur(function(){
 	var phoneExp = new RegExp(/^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$/);
 	var result = phoneExp.test(phone);
     var messageText = 'Please enter a valid phone number.';
-    if (!result) {
+    if (!result || !(/\S/.test(phone))) {
         $('.phoneCheck').html(messageText);
         $('input[name=phone]').css('border-color', '#e41919');
 	} else {
@@ -541,3 +567,38 @@ $('input[name="phone"]').blur(function(){
         $('input[name=phone]').css('border-color', 'none');
 	}
 });
+
+$('textarea').blur(function() {
+    var note = $('textarea').val();
+    var messageText = 'Please enter at least 10 characters.';
+    if (note.length < 10 || !(/\S/.test(note))) {
+        $('.messageCheck').html(messageText);
+        $('textarea').css('border-color', '#e41919');
+    } else {
+        $('.messageCheck').html('');
+        $('textarea').css('border-color', 'none');
+    }
+});
+
+(function() {
+    $('.controls input[type=text], textarea').on('keyup blur', function() {
+		var allClear = false;
+        var empty = true;
+        if ($('.nameCheck').html() === '' && $('.lastNameCheck').html() === '' && $('.phoneCheck').html() === '' &&
+			$('.emailCheck').html()=== '' && $('.messageCheck').html() === '') {
+            allClear = true;
+		}
+        $('.controls input[type=text], textarea').each(function() {
+            if (($(this).val() !== '') && allClear) {
+                empty = false;
+            } else {
+                empty = true;
+            }
+        });
+        if (!empty) {
+            $('input[type="submit"]').removeAttr('disabled');
+        } else {
+            $('input[type="submit"]').attr('disabled', 'disabled');
+        }
+    });
+})();

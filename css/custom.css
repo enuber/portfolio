@@ -37,16 +37,14 @@ a:hover {
     max-height: 80px;
     margin: 0 15px 15px;
 }
-.skills {
-    margin-bottom:;
-}
-
 .iconRow div {
     text-align: center;
 }
-.emailCheck, .phoneCheck {
+.emailCheck, .phoneCheck,
+.nameCheck, .lastNameCheck,
+.messageCheck {
     color: #e41919;
-    font: 8px;
+    font-size: 15px;
 }
 @media screen and (max-width: 650px) {
     .githubResume {

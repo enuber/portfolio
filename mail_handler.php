@@ -21,6 +21,25 @@ $options = array(
     )
 );
 
+function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
+$name = $surname = $email = $phone = $message = "";
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $name = test_input($_POST['name']);
+    $surname = test_input($_POST['surname']);
+    $email = test_input($_POST['email']);
+    $phone = test_input($_POST['phone']);
+    $message = test_input($_POST['message']);
+}
+
+
+
 $mail->smtpConnect($options);
 $mail->From = $_POST['email'];
 $mail->FromName = $_POST['name'];
@@ -29,7 +48,7 @@ $mail->addReplyTo($_POST['email']);
 $mail->isHTML(true);                           // Set email format to HTML
 
 $mail->Subject = 'Contact From Your Portfolio';
-$mail->Body    = $_POST['name'].' '.$_POST['surname'].' '.$_POST['email'].' '.$_POST['phone'].' '.$_POST['message'];
+$mail->Body    = $name.' '.$surname.' '.$email.' '.$phone.' '.$message;
 $mail->AltBody = htmlentities($_POST['message']);
 
 if(!$mail->Send()){
