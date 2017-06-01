@@ -444,7 +444,9 @@ function waypointsRefresh() {
 
 function contactForm() {
     $("#contact-form").submit(function () {
+        $('input[type="submit"]').attr('disabled', 'disabled');
 
+        $('.loadingVisible').removeClass('hideLoader');
 	var url = "../mail_handler.php"; // the script where you handle the form input.
 
 	$.ajax({
@@ -452,6 +454,7 @@ function contactForm() {
 	    url: url,
 	    data: $(this).serialize(), // serializes the form's elements.
 	    success: function (data) {
+            $('.loadingVisible').addClass('hideLoader');
 	    	$('.formSubmit').closest('form').find('input[type=text], textarea').val('');
 	    	var messageAlert = 'alert-success';
 			var messageText = 'Success, information was sent';
@@ -461,6 +464,8 @@ function contactForm() {
 			}
 	    },
 		error: function(){
+            $('.loadingVisible').addClass('hideLoader');
+            $('input[type="submit"]').removeAttr('disabled');
             var messageAlert = 'alert-danger';
             var messageText = 'Failure, information was not sent';
             var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable animated bounceIn"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
