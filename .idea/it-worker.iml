@@ -15,5 +15,6 @@
       </library>
     </orderEntry>
     <orderEntry type="module" module-name="lfz" />
+    <orderEntry type="module" module-name="30DaysJS" />
   </component>
 </module>
