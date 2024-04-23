@@ -119,7 +119,8 @@ function sliding() {
 	var parts = full_url.split("#");
 	var trgt = parts[1];
 
-	$('body').scrollTo($('#' + trgt), 800, {offset: -80});
+	$('html, body').stop().animate({scrollTop: jQuery('#'+trgt).offset().top - 80}, 1000);
+	// $('body').scrollTo($('#' + trgt), 800, {offset: -80});
 
     });
 }
