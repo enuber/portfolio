@@ -1,142 +1,164 @@
-
 .appleImgGroup {
-    position: relative
+  position: relative;
 }
 .appleImg {
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    opacity: 0.2;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  opacity: 0.2;
 }
 .githubResume {
-    position: relative;
-    bottom: 275px;
-    z-index: 10;
+  position: relative;
+  bottom: 275px;
+  z-index: 10;
 }
 .githubResume div {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 .githubResume button:first-of-type {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 .githubButton {
-    background-color: transparent;
-    box-shadow: 2px 2px 8px #808080;
+  background-color: transparent;
+  box-shadow: 2px 2px 8px #808080;
 }
-a:hover, .githubButton:hover {
-    text-decoration: none;
+a:hover,
+.githubButton:hover {
+  text-decoration: none;
 }
 .githubButton:hover {
-    background-color: #4fbfa8;
+  background-color: #4fbfa8;
 }
 a:hover {
-    color: white;
+  color: white;
+}
+.icons {
+  margin: 15px auto 0;
 }
 
 .skills img {
-    max-height: 80px;
-    margin: 0 15px 15px;
+  max-height: 80px;
+  margin: 0 15px 15px;
+  /* filter: drop-shadow(0 0 1px #fff); */
 }
 .iconRow div {
-    text-align: center;
+  text-align: center;
 }
-.emailCheck, .phoneCheck,
-.nameCheck, .lastNameCheck,
+.emailCheck,
+.phoneCheck,
+.nameCheck,
+.lastNameCheck,
 .messageCheck {
-    color: #e41919;
-    font-size: 15px;
+  color: #e41919;
+  font-size: 15px;
 }
 #detail-content {
-    text-align: center;
-    margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
 }
 #detail-content .alignLeft {
-    text-align: left;
+  text-align: left;
 }
 .buttonGroup {
-    display: inline-block;
-    text-align: center;
-    margin: 12.5px;
+  display: inline-block;
+  text-align: center;
+  margin: 12.5px;
 }
 @media screen and (max-width: 650px) {
-    .githubResume {
-        bottom: 175px;
-    }
+  .githubResume {
+    bottom: 175px;
+  }
 
-    .appleImgGroup {
-        margin-bottom: -250px;
-    }
-    .skills img {
-        max-height: 50px;
-        margin: 0 8px 8px;
-    }
+  .appleImgGroup {
+    margin-bottom: -250px;
+  }
+  .skills img {
+    max-height: 50px;
+    margin: 0 8px 8px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
-    .appleImgGroup {
-        margin-bottom: -175px;
-    }
-
+  .appleImgGroup {
+    margin-bottom: -175px;
+  }
 }
 
 /*spinner*/
 
 .hideLoader {
-    display: none;
+  display: none;
 }
 
 .sendText {
-    display: inline-block;
-    color: #4fbfa8;
-    font-size: 20px;
-    font: Arial, Helvetica, sans-serif;
-    margin-left: 15px;
+  display: inline-block;
+  color: #4fbfa8;
+  font-size: 20px;
+  font: Arial, Helvetica, sans-serif;
+  margin-left: 15px;
 }
 .spinner {
-    margin: -30px auto 0;
-    width: 40px;
-    height: 40px;
-    position: relative;
-    text-align: center;
-    display: inline-block;
-    -webkit-animation: sk-rotate 2.0s infinite linear;
-    animation: sk-rotate 2.0s infinite linear;
+  margin: -30px auto 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  -webkit-animation: sk-rotate 2s infinite linear;
+  animation: sk-rotate 2s infinite linear;
 }
 
-.dot1, .dot2 {
-    width: 60%;
-    height: 60%;
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    background-color: #4fbfa8;
-    border-radius: 100%;
+.dot1,
+.dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #4fbfa8;
+  border-radius: 100%;
 
-    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-    animation: sk-bounce 2.0s infinite ease-in-out;
+  -webkit-animation: sk-bounce 2s infinite ease-in-out;
+  animation: sk-bounce 2s infinite ease-in-out;
 }
 
 .dot2 {
-    top: auto;
-    bottom: 0;
-    -webkit-animation-delay: -1.0s;
-    animation-delay: -1.0s;
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
 }
 
-@-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
-@keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+@-webkit-keyframes sk-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes sk-rotate {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
 
 @-webkit-keyframes sk-bounce {
-    0%, 100% { -webkit-transform: scale(0.0) }
-    50% { -webkit-transform: scale(1.0) }
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
 }
 
 @keyframes sk-bounce {
-    0%, 100% {
-        transform: scale(0.0);
-        -webkit-transform: scale(0.0);
-    } 50% {
-          transform: scale(1.0);
-          -webkit-transform: scale(1.0);
-      }
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
 }
